@@ -1,5 +1,5 @@
 import unittest
-import moodle_locators as locators
+import aos_locators as locators
 import aos_methods as methods
 
 class aosAppPostiveTestCases(unittest.TestCase):
@@ -9,5 +9,5 @@ class aosAppPostiveTestCases(unittest.TestCase):
         methods.setUp()
         methods.create_new_user()
         methods.sign_out()
-        methods.log_in(locators.admin_username, locators.admin_password)
+        methods.log_in(locators.new_username, locators.new_password)
         methods.teardown()
